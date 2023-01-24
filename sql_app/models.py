@@ -1,7 +1,7 @@
 from sqlalchemy import Column, ForeignKey, Integer, String, DateTime
 from .database import Base
 
-class Use(Base):
+class User(Base):
     __tablename__ = 'users'
     user_id = Column(Integer, primary_key=True, index=True)
     user_name = Column(String, unique=True, index=True)
